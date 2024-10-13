@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #ffffff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container{
+    max-width: 1368px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px 10%;
+    background-color: #e4a576;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    z-index: 100;
+}
+
+
+.header__wrapper {
+    display: flex; 
+    align-items: center; 
+	width: 100%;
+}
+
+.header__wrapper-left{
+	display: flex;
+	align-items: end;
+    justify-content: end;
+	gap: 40px;
+	color: #000000;
+}
+
+.header__wrapper-nav ul{
+	display: flex;
+	align-items: end;
+    justify-content: end;
+	gap: 40px;
+    color: white;
+}
+
+.header__wrapper-nav a{
+    text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	align-items: end;
+}
+
+.header__wrapper-right{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+
+.logo a{
+    color: #152935;
+    padding: 0px 500px;
+    font-size: 35px;
+}
+
+.nav-list a:hover,
+.nav-list a.first{
+    color: #152935;
+}
+
+.hobby{
+    padding: 200px 0;
+    background-color: #ddb892;
+}
+
+.hobby-content h1{
+    margin-left: 160px;
+    text-align: right;
+    color: brown;
+    font-size: 42px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ccd5d2;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 20px 20px
+
+}
+
+.hobby-content h3{
+    font-family: cursive;
+    font-size: 62px;
+    color: #ffffff;
+    padding: 30px 80px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.hobby-content p{
+    color: #ede0d4;
+    font-size: 35px;
+    margin: 2em;
+}
+
+.hobby-img img{
+    position: relative;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 25px #20f8cc,
+                0 0 25px #20f8cc;
+    border-radius: 10%;
+    margin-top: 100px;
+}
+
+.hobby__images {
+    padding: 50px 0; 
+    background-color: #698ea2;
+}
+
+.hobby__images h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hobby__images-ex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 0;
+}
+
+.hobby-image {
+    flex: 1 1 200px; 
+    max-width: 100%;
+}
+
+.hobby-image img {
+    margin-left: 30px;
+    width: 350px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .hobby {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hobby-content {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .hobby-img img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .hobby {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .hobby-content {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .hobby-img img {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
